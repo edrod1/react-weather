@@ -1,19 +1,7 @@
 import { useEffect, useState } from "react"
 
 function App() {
-  const [weatherData, setWeatherData] = useState({})
-  const [location, setLocation] = useState("")
-  const API_KEY = "7c8004625e900052ab9f80d73d92abe1"
-  const url = (`https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=${API_KEY}`)
 
-
-  const getData = () => {
-    fetch(url)
-      .then(res => res.json())
-      .then(data => setWeatherData(data))
-  }
-
-  console.log(weatherData.data)
   return (
     <div className="app">
       <div className="container">
