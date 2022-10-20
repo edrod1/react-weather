@@ -39,7 +39,21 @@ top:0;
 left: 0;
 z-index: -1;
 }
-
+.app .search {
+  text-align: center;
+  padding: 1rem;
+}
+.app input {
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 25px;
+  border: 1px solid rgbs(255,255,255, 0.8);
+  background: rgba(255,255,255,0.1);
+ 
+}
+.app input::placeholder {
+  color: #f8f8f8
+}
 .container {
   max-width: 80%;
   height: 700px;
